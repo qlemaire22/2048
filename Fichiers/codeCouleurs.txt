@@ -1,0 +1,14 @@
+fond : fbf8ef
+plateau : bbada0
+couleur titre : 79726a
+case vide : cdc1b5
+2 : eee4da
+4 : ece0ca
+8 : f2b179
+16 : fb9169
+32 : f27c58
+64 : f95f3d
+128 : eccf73
+248 : 
+512 : e8c857
+1024 : f2c43d
