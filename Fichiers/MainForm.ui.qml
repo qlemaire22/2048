@@ -49,11 +49,17 @@ Item {
         Keys.onPressed: {
           switch (event.key) {
             case Qt.Key_Up:
-              vueObjetCpt.increment();
-              break;
+                vueObjetCpt.haut();
+                break;
             case Qt.Key_Down:
-              vueObjetCpt.decrement();
-              break;
+                vueObjetCpt.bas();
+                break;
+            case Qt.Key_Left:
+                vueObjetCpt.gauche();
+                break;
+            case Qt.Key_Right:
+                vueObjetCpt.droite();
+                break;
           }
         }
 
@@ -417,13 +423,13 @@ Item {
 
             Rectangle {
                 id: chiffre1
-                x: 0
-                y: 0
+                x: vueObjetCpt.abs[0]
+                y: vueObjetCpt.ord[0]
                 width: 80
                 height: 80
                 color: "#ffffff"
                 radius: 10
-                visible: true
+                visible: vueObjetCpt.visi[0]
                 Text {
                     id: text1
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -433,17 +439,18 @@ Item {
                 }
                 border.width: 5
                 border.color: "#ffffff"
+                state: "State5"
             }
 
             Rectangle {
                 id: chiffre2
-                x: -3
-                y: -2
+                x: vueObjetCpt.abs[1]
+                y: vueObjetCpt.ord[1]
                 width: 80
                 height: 80
-                color: "#cdc1b5"
+                color: "#ffffff"
                 radius: 10
-                visible: vueObjetCpt.cptQML2
+                visible: vueObjetCpt.visi[1]
                 Text {
                     id: text2
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -457,13 +464,13 @@ Item {
 
             Rectangle {
                 id: chiffre3
-                x: 8
-                y: -4
+                x: vueObjetCpt.abs[2]
+                y: vueObjetCpt.ord[2]
                 width: 80
                 height: 80
-                color: "#cdc1b5"
+                color: "#ffffff"
                 radius: 10
-                visible: vueObjetCpt.cptQML2
+                visible: vueObjetCpt.visi[2]
                 Text {
                     id: text3
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -477,13 +484,13 @@ Item {
 
             Rectangle {
                 id: chiffre4
-                x: 0
-                y: 0
+                x: vueObjetCpt.abs[3]
+                y: vueObjetCpt.ord[3]
                 width: 80
                 height: 80
-                color: "#cdc1b5"
+                color: "#ffffff"
                 radius: 10
-                visible: vueObjetCpt.cptQML2
+                visible: vueObjetCpt.visi[3]
                 Text {
                     id: text4
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -497,13 +504,13 @@ Item {
 
             Rectangle {
                 id: chiffre5
-                x: 0
-                y: 0
+                x: vueObjetCpt.abs[4]
+                y: vueObjetCpt.ord[4]
                 width: 80
                 height: 80
-                color: "#cdc1b5"
+                color: "#ffffff"
                 radius: 10
-                visible: vueObjetCpt.cptQML2
+                visible: vueObjetCpt.visi[4]
                 Text {
                     id: text5
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -517,13 +524,13 @@ Item {
 
             Rectangle {
                 id: chiffre6
-                x: -5
-                y: -7
+                x: vueObjetCpt.abs[5]
+                y: vueObjetCpt.ord[5]
                 width: 80
                 height: 80
-                color: "#cdc1b5"
+                color: "#ffffff"
                 radius: 10
-                visible: vueObjetCpt.cptQML2
+                visible: vueObjetCpt.visi[5]
                 Text {
                     id: text6
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -537,13 +544,13 @@ Item {
 
             Rectangle {
                 id: chiffre7
-                x: -7
-                y: 2
+                x: vueObjetCpt.abs[6]
+                y: vueObjetCpt.ord[6]
                 width: 80
                 height: 80
-                color: "#cdc1b5"
+                color: "#ffffff"
                 radius: 10
-                visible: vueObjetCpt.cptQML2
+                visible: vueObjetCpt.visi[6]
                 Text {
                     id: text7
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -557,13 +564,13 @@ Item {
 
             Rectangle {
                 id: chiffre8
-                x: 6
-                y: 0
+                x: vueObjetCpt.abs[7]
+                y: vueObjetCpt.ord[7]
                 width: 80
                 height: 80
-                color: "#cdc1b5"
+                color: "#ffffff"
                 radius: 10
-                visible: vueObjetCpt.cptQML2
+                visible: vueObjetCpt.visi[7]
                 Text {
                     id: text8
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -577,13 +584,13 @@ Item {
 
             Rectangle {
                 id: chiffre9
-                x: -2
-                y: 2
+                x: vueObjetCpt.abs[8]
+                y: vueObjetCpt.ord[8]
                 width: 80
                 height: 80
-                color: "#cdc1b5"
+                color: "#ffffff"
                 radius: 10
-                visible: vueObjetCpt.cptQML2
+                visible: vueObjetCpt.visi[8]
                 Text {
                     id: text9
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -597,13 +604,13 @@ Item {
 
             Rectangle {
                 id: chiffre10
-                x: -8
-                y: -1
+                x: vueObjetCpt.abs[9]
+                y: vueObjetCpt.ord[9]
                 width: 80
                 height: 80
-                color: "#cdc1b5"
+                color: "#ffffff"
                 radius: 10
-                visible: vueObjetCpt.cptQML2
+                visible: vueObjetCpt.visi[9]
                 Text {
                     id: text10
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -617,13 +624,13 @@ Item {
 
             Rectangle {
                 id: chiffre11
-                x: -7
-                y: 4
+                x: vueObjetCpt.abs[10]
+                y: vueObjetCpt.ord[10]
                 width: 80
                 height: 80
-                color: "#cdc1b5"
+                color: "#ffffff"
                 radius: 10
-                visible: vueObjetCpt.cptQML2
+                visible: vueObjetCpt.visi[10]
                 Text {
                     id: text11
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -637,13 +644,13 @@ Item {
 
             Rectangle {
                 id: chiffre12
-                x: 0
-                y: -5
+                x: vueObjetCpt.abs[11]
+                y: vueObjetCpt.ord[11]
                 width: 80
                 height: 80
-                color: "#cdc1b5"
+                color: "#ffffff"
                 radius: 10
-                visible: vueObjetCpt.cptQML2
+                visible: vueObjetCpt.visi[11]
                 Text {
                     id: text12
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -657,13 +664,13 @@ Item {
 
             Rectangle {
                 id: chiffre13
-                x: 6
-                y: -4
+                x: vueObjetCpt.abs[12]
+                y: vueObjetCpt.ord[12]
                 width: 80
                 height: 80
-                color: "#cdc1b5"
+                color: "#ffffff"
                 radius: 10
-                visible: vueObjetCpt.cptQML2
+                visible: vueObjetCpt.visi[12]
                 Text {
                     id: text13
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -677,13 +684,13 @@ Item {
 
             Rectangle {
                 id: chiffre14
-                x: 4
-                y: -2
+                x: vueObjetCpt.abs[13]
+                y: vueObjetCpt.ord[13]
                 width: 80
                 height: 80
-                color: "#cdc1b5"
+                color: "#ffffff"
                 radius: 10
-                visible: vueObjetCpt.cptQML2
+                visible: vueObjetCpt.visi[13]
                 Text {
                     id: text14
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -697,13 +704,14 @@ Item {
 
             Rectangle {
                 id: chiffre15
-                x: 7
-                y: 0
+                x: vueObjetCpt.abs[14]
+                y: vueObjetCpt.ord[14]
                 width: 80
                 height: 80
-                color: "#cdc1b5"
+                color: "#ffffff"
                 radius: 10
-                visible: vueObjetCpt.cptQML2
+                visible: vueObjetCpt.visi[14]
+
                 Text {
                     id: text15
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -711,19 +719,20 @@ Item {
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: 20
                 }
+
                 border.width: 5
                 border.color: "#cdc1b5"
             }
 
             Rectangle {
                 id: chiffre16
-                x: 0
-                y: 0
+                x: vueObjetCpt.abs[15]
+                y: vueObjetCpt.ord[15]
                 width: 80
                 height: 80
-                color: "#cdc1b5"
+                color: "#ffffff"
                 radius: 10
-                visible: vueObjetCpt.cptQML2
+                visible: vueObjetCpt.visi[15]
                 Text {
                     id: text16
                     anchors.horizontalCenter: parent.horizontalCenter
