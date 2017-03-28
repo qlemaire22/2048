@@ -2,7 +2,7 @@
 
 int Plateau::findElement(vector<int> &liste,int element) {
     int result = 0;
-    for (int i=0; i<liste.size();++i){
+    for (int signed i=0; i<liste.size();++i){
         if (liste[i] == element){
             result = i;
         }
@@ -19,11 +19,20 @@ Plateau::Plateau(QObject *parent) : QObject(parent)
     position.push_back(104);
     position.push_back(196);
     position.push_back(288);
+    listeCouleurs.push_back("eee4da");
+    listeCouleurs.push_back("ece0ca");
+    listeCouleurs.push_back("f2b179");
+    listeCouleurs.push_back("fb9169");
+    listeCouleurs.push_back("f27c58");
+    listeCouleurs.push_back("f95f3d");
+    listeCouleurs.push_back("eccf73");
     for (i=1;i<=16;i++){
         visible.append(false);
         x.append(0);
         y.append(0);
         disponible.push_back(i);
+        couleurs.push_back("#0000000");
+        chiffres.push_back("0");
     }
     for (int i = 0; i < 4; i++)
         for (int j = 0; j < 4; j++)
@@ -64,6 +73,8 @@ Plateau::Plateau(QObject *parent) : QObject(parent)
          cout << disponible[i] << " ";
       }
     cout << endl;
+    cout << couleurs.size();
+    cout << endl;
     cptChanged();
 }
 
@@ -86,6 +97,16 @@ QVector<int> Plateau::readAbs()
 QVector<int> Plateau::readOrd()
 {
     return y;
+}
+
+QVector<QString> Plateau::readColor()
+{
+    return couleurs;
+}
+
+QVector<QString> Plateau::readChiffre()
+{
+    return QString::QString(chiffres);
 }
 
 void Plateau::haut() {

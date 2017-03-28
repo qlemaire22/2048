@@ -427,7 +427,7 @@ Item {
                 y: vueObjetCpt.ord[0]
                 width: 80
                 height: 80
-                color: "#ffffff"
+                color: vueObjetCpt.color[0]
                 radius: 10
                 visible: vueObjetCpt.visi[0]
                 Text {
@@ -438,8 +438,7 @@ Item {
                     font.pixelSize: 20
                 }
                 border.width: 5
-                border.color: "#ffffff"
-                state: "State5"
+                border.color: "#cdc1b5"
             }
 
             Rectangle {
@@ -448,7 +447,7 @@ Item {
                 y: vueObjetCpt.ord[1]
                 width: 80
                 height: 80
-                color: "#ffffff"
+                color: vueObjetCpt.color[1]
                 radius: 10
                 visible: vueObjetCpt.visi[1]
                 Text {
@@ -468,7 +467,7 @@ Item {
                 y: vueObjetCpt.ord[2]
                 width: 80
                 height: 80
-                color: "#ffffff"
+                color: vueObjetCpt.color[2]
                 radius: 10
                 visible: vueObjetCpt.visi[2]
                 Text {
@@ -488,7 +487,7 @@ Item {
                 y: vueObjetCpt.ord[3]
                 width: 80
                 height: 80
-                color: "#ffffff"
+                color: vueObjetCpt.color[3]
                 radius: 10
                 visible: vueObjetCpt.visi[3]
                 Text {
@@ -508,7 +507,7 @@ Item {
                 y: vueObjetCpt.ord[4]
                 width: 80
                 height: 80
-                color: "#ffffff"
+                color: vueObjetCpt.color[4]
                 radius: 10
                 visible: vueObjetCpt.visi[4]
                 Text {
@@ -528,7 +527,7 @@ Item {
                 y: vueObjetCpt.ord[5]
                 width: 80
                 height: 80
-                color: "#ffffff"
+                color: vueObjetCpt.color[5]
                 radius: 10
                 visible: vueObjetCpt.visi[5]
                 Text {
@@ -548,7 +547,7 @@ Item {
                 y: vueObjetCpt.ord[6]
                 width: 80
                 height: 80
-                color: "#ffffff"
+                color: vueObjetCpt.color[6]
                 radius: 10
                 visible: vueObjetCpt.visi[6]
                 Text {
@@ -568,7 +567,7 @@ Item {
                 y: vueObjetCpt.ord[7]
                 width: 80
                 height: 80
-                color: "#ffffff"
+                color: vueObjetCpt.color[7]
                 radius: 10
                 visible: vueObjetCpt.visi[7]
                 Text {
@@ -588,7 +587,7 @@ Item {
                 y: vueObjetCpt.ord[8]
                 width: 80
                 height: 80
-                color: "#ffffff"
+                color: vueObjetCpt.color[8]
                 radius: 10
                 visible: vueObjetCpt.visi[8]
                 Text {
@@ -608,7 +607,7 @@ Item {
                 y: vueObjetCpt.ord[9]
                 width: 80
                 height: 80
-                color: "#ffffff"
+                color: vueObjetCpt.color[9]
                 radius: 10
                 visible: vueObjetCpt.visi[9]
                 Text {
@@ -628,11 +627,13 @@ Item {
                 y: vueObjetCpt.ord[10]
                 width: 80
                 height: 80
-                color: "#ffffff"
+                color: vueObjetCpt.color[10]
                 radius: 10
                 visible: vueObjetCpt.visi[10]
                 Text {
                     id: text11
+                    color: "#000000"
+                    text: vueObjetCpt.chiffre[10]
                     anchors.horizontalCenter: parent.horizontalCenter
                     font.family: "Tahoma"
                     anchors.verticalCenter: parent.verticalCenter
@@ -648,7 +649,7 @@ Item {
                 y: vueObjetCpt.ord[11]
                 width: 80
                 height: 80
-                color: "#ffffff"
+                color: vueObjetCpt.color[11]
                 radius: 10
                 visible: vueObjetCpt.visi[11]
                 Text {
@@ -668,7 +669,7 @@ Item {
                 y: vueObjetCpt.ord[12]
                 width: 80
                 height: 80
-                color: "#ffffff"
+                color: vueObjetCpt.color[12]
                 radius: 10
                 visible: vueObjetCpt.visi[12]
                 Text {
@@ -688,7 +689,7 @@ Item {
                 y: vueObjetCpt.ord[13]
                 width: 80
                 height: 80
-                color: "#ffffff"
+                color: vueObjetCpt.color[13]
                 radius: 10
                 visible: vueObjetCpt.visi[13]
                 Text {
@@ -708,7 +709,7 @@ Item {
                 y: vueObjetCpt.ord[14]
                 width: 80
                 height: 80
-                color: "#ffffff"
+                color: vueObjetCpt.color[14]
                 radius: 10
                 visible: vueObjetCpt.visi[14]
 
@@ -730,7 +731,7 @@ Item {
                 y: vueObjetCpt.ord[15]
                 width: 80
                 height: 80
-                color: "#ffffff"
+                color: vueObjetCpt.color[15]
                 radius: 10
                 visible: vueObjetCpt.visi[15]
                 Text {

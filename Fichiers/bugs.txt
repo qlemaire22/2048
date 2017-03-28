@@ -1,0 +1,2 @@
+Crash quand il y a déjà 16 carreaux
+quand on arrive trop haut et qu'il n'y a plus de couleurs

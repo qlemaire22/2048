@@ -24,11 +24,15 @@ public:
     Q_PROPERTY(QVector<bool> visi READ readVisible NOTIFY cptChanged);
     Q_PROPERTY(QVector<int> abs READ readAbs NOTIFY cptChanged);
     Q_PROPERTY(QVector<int> ord READ readOrd NOTIFY cptChanged);
+    Q_PROPERTY(QVector<QString> color READ readColor NOTIFY cptChanged);
+    Q_PROPERTY(QVector<QString> chiffre READ readChiffre NOTIFY cptChanged);
 
     QString readPlateau();
     QVector<bool> readVisible();
     QVector<int> readAbs();
     QVector<int> readOrd();
+    QVector<QString> readColor();
+    QVector<QString> readChiffre();
     int findElement(vector<int> &liste,int element);
 
 signals:
@@ -39,6 +43,9 @@ public slots:
 private:
     QVector<bool> visible;
     vector<int> position;
+    QVector<QString> couleurs;
+    QVector<QString> chiffres;
+    vector<string> listeCouleurs;
     int t[4][4];
     vector<int> disponible;
     QVector<int> x;
