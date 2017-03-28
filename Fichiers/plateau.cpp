@@ -106,7 +106,7 @@ QVector<QString> Plateau::readColor()
 
 QVector<QString> Plateau::readChiffre()
 {
-    return QString::QString(chiffres);
+    return chiffres;;
 }
 
 void Plateau::haut() {
