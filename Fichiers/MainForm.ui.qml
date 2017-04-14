@@ -119,7 +119,7 @@ Item {
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.horizontalCenter: parent.horizontalCenter
                 font.pixelSize: 15
-                text: vueObjetCpt.cptQML
+                text: vueObjetCpt.best
                 focus: true
 
             }
@@ -160,7 +160,7 @@ Item {
                 width: 85
                 height: 24
                 color: "#ffffff"
-                text: qsTr("0")
+                text: vueObjetCpt.scoree
                 anchors.verticalCenterOffset: 10
                 font.bold: false
                 font.family: "Tahoma"
@@ -427,7 +427,7 @@ Item {
                 y: vueObjetCpt.ord[0]
                 width: 80
                 height: 80
-                color: vueObjetCpt.color[0]
+                color: "#ffffff"
                 radius: 10
                 visible: vueObjetCpt.visi[0]
                 Text {
@@ -436,6 +436,7 @@ Item {
                     font.family: "Tahoma"
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: 20
+                    text: vueObjetCpt.val[0]
                 }
                 border.width: 5
                 border.color: "#cdc1b5"
@@ -447,7 +448,7 @@ Item {
                 y: vueObjetCpt.ord[1]
                 width: 80
                 height: 80
-                color: vueObjetCpt.color[1]
+                color: "#ffffff"
                 radius: 10
                 visible: vueObjetCpt.visi[1]
                 Text {
@@ -456,6 +457,8 @@ Item {
                     font.family: "Tahoma"
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: 20
+                    text: vueObjetCpt.val[1]
+
                 }
                 border.width: 5
                 border.color: "#cdc1b5"
@@ -467,7 +470,7 @@ Item {
                 y: vueObjetCpt.ord[2]
                 width: 80
                 height: 80
-                color: vueObjetCpt.color[2]
+                color: "#ffffff"
                 radius: 10
                 visible: vueObjetCpt.visi[2]
                 Text {
@@ -476,6 +479,7 @@ Item {
                     font.family: "Tahoma"
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: 20
+                    text: vueObjetCpt.val[2]
                 }
                 border.width: 5
                 border.color: "#cdc1b5"
@@ -487,7 +491,7 @@ Item {
                 y: vueObjetCpt.ord[3]
                 width: 80
                 height: 80
-                color: vueObjetCpt.color[3]
+                color: "#ffffff"
                 radius: 10
                 visible: vueObjetCpt.visi[3]
                 Text {
@@ -496,6 +500,7 @@ Item {
                     font.family: "Tahoma"
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: 20
+                    text: vueObjetCpt.val[3]
                 }
                 border.width: 5
                 border.color: "#cdc1b5"
@@ -507,7 +512,7 @@ Item {
                 y: vueObjetCpt.ord[4]
                 width: 80
                 height: 80
-                color: vueObjetCpt.color[4]
+                color: "#ffffff"
                 radius: 10
                 visible: vueObjetCpt.visi[4]
                 Text {
@@ -516,6 +521,7 @@ Item {
                     font.family: "Tahoma"
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: 20
+                    text: vueObjetCpt.val[4]
                 }
                 border.width: 5
                 border.color: "#cdc1b5"
@@ -527,7 +533,7 @@ Item {
                 y: vueObjetCpt.ord[5]
                 width: 80
                 height: 80
-                color: vueObjetCpt.color[5]
+                color: "#ffffff"
                 radius: 10
                 visible: vueObjetCpt.visi[5]
                 Text {
@@ -536,6 +542,7 @@ Item {
                     font.family: "Tahoma"
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: 20
+                    text: vueObjetCpt.val[5]
                 }
                 border.width: 5
                 border.color: "#cdc1b5"
@@ -547,7 +554,7 @@ Item {
                 y: vueObjetCpt.ord[6]
                 width: 80
                 height: 80
-                color: vueObjetCpt.color[6]
+                color: "#ffffff"
                 radius: 10
                 visible: vueObjetCpt.visi[6]
                 Text {
@@ -556,6 +563,7 @@ Item {
                     font.family: "Tahoma"
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: 20
+                    text: vueObjetCpt.val[6]
                 }
                 border.width: 5
                 border.color: "#cdc1b5"
@@ -567,7 +575,7 @@ Item {
                 y: vueObjetCpt.ord[7]
                 width: 80
                 height: 80
-                color: vueObjetCpt.color[7]
+                color: "#ffffff"
                 radius: 10
                 visible: vueObjetCpt.visi[7]
                 Text {
@@ -576,6 +584,7 @@ Item {
                     font.family: "Tahoma"
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: 20
+                    text: vueObjetCpt.val[7]
                 }
                 border.width: 5
                 border.color: "#cdc1b5"
@@ -587,7 +596,7 @@ Item {
                 y: vueObjetCpt.ord[8]
                 width: 80
                 height: 80
-                color: vueObjetCpt.color[8]
+                color: "#ffffff"
                 radius: 10
                 visible: vueObjetCpt.visi[8]
                 Text {
@@ -596,6 +605,7 @@ Item {
                     font.family: "Tahoma"
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: 20
+                    text: vueObjetCpt.val[8]
                 }
                 border.width: 5
                 border.color: "#cdc1b5"
@@ -607,7 +617,7 @@ Item {
                 y: vueObjetCpt.ord[9]
                 width: 80
                 height: 80
-                color: vueObjetCpt.color[9]
+                color: "#ffffff"
                 radius: 10
                 visible: vueObjetCpt.visi[9]
                 Text {
@@ -616,6 +626,7 @@ Item {
                     font.family: "Tahoma"
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: 20
+                    text: vueObjetCpt.val[9]
                 }
                 border.width: 5
                 border.color: "#cdc1b5"
@@ -627,17 +638,16 @@ Item {
                 y: vueObjetCpt.ord[10]
                 width: 80
                 height: 80
-                color: vueObjetCpt.color[10]
+                color: "#ffffff"
                 radius: 10
                 visible: vueObjetCpt.visi[10]
                 Text {
                     id: text11
-                    color: "#000000"
-                    text: vueObjetCpt.chiffre[10]
                     anchors.horizontalCenter: parent.horizontalCenter
                     font.family: "Tahoma"
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: 20
+                    text: vueObjetCpt.val[10]
                 }
                 border.width: 5
                 border.color: "#cdc1b5"
@@ -649,7 +659,7 @@ Item {
                 y: vueObjetCpt.ord[11]
                 width: 80
                 height: 80
-                color: vueObjetCpt.color[11]
+                color: "#ffffff"
                 radius: 10
                 visible: vueObjetCpt.visi[11]
                 Text {
@@ -658,6 +668,7 @@ Item {
                     font.family: "Tahoma"
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: 20
+                    text: vueObjetCpt.val[11]
                 }
                 border.width: 5
                 border.color: "#cdc1b5"
@@ -669,7 +680,7 @@ Item {
                 y: vueObjetCpt.ord[12]
                 width: 80
                 height: 80
-                color: vueObjetCpt.color[12]
+                color: "#ffffff"
                 radius: 10
                 visible: vueObjetCpt.visi[12]
                 Text {
@@ -678,6 +689,7 @@ Item {
                     font.family: "Tahoma"
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: 20
+                    text: vueObjetCpt.val[12]
                 }
                 border.width: 5
                 border.color: "#cdc1b5"
@@ -689,7 +701,7 @@ Item {
                 y: vueObjetCpt.ord[13]
                 width: 80
                 height: 80
-                color: vueObjetCpt.color[13]
+                color: "#ffffff"
                 radius: 10
                 visible: vueObjetCpt.visi[13]
                 Text {
@@ -698,6 +710,7 @@ Item {
                     font.family: "Tahoma"
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: 20
+                    text: vueObjetCpt.val[13]
                 }
                 border.width: 5
                 border.color: "#cdc1b5"
@@ -709,7 +722,7 @@ Item {
                 y: vueObjetCpt.ord[14]
                 width: 80
                 height: 80
-                color: vueObjetCpt.color[14]
+                color: "#ffffff"
                 radius: 10
                 visible: vueObjetCpt.visi[14]
 
@@ -719,6 +732,7 @@ Item {
                     font.family: "Tahoma"
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: 20
+                    text: vueObjetCpt.val[14]
                 }
 
                 border.width: 5
@@ -731,7 +745,7 @@ Item {
                 y: vueObjetCpt.ord[15]
                 width: 80
                 height: 80
-                color: vueObjetCpt.color[15]
+                color: "#ffffff"
                 radius: 10
                 visible: vueObjetCpt.visi[15]
                 Text {
@@ -740,6 +754,7 @@ Item {
                     font.family: "Tahoma"
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: 20
+                    text: vueObjetCpt.val[15]
                 }
                 border.width: 5
                 border.color: "#cdc1b5"

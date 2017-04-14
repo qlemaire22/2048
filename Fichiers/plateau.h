@@ -19,21 +19,24 @@ public:
     Q_INVOKABLE void bas();
     Q_INVOKABLE void droite();
     Q_INVOKABLE void gauche();
+    Q_INVOKABLE void reinitialise();
 
     Q_PROPERTY(QString cptQML READ readPlateau NOTIFY cptChanged);
     Q_PROPERTY(QVector<bool> visi READ readVisible NOTIFY cptChanged);
     Q_PROPERTY(QVector<int> abs READ readAbs NOTIFY cptChanged);
     Q_PROPERTY(QVector<int> ord READ readOrd NOTIFY cptChanged);
-    Q_PROPERTY(QVector<QString> color READ readColor NOTIFY cptChanged);
-    Q_PROPERTY(QVector<QString> chiffre READ readChiffre NOTIFY cptChanged);
+    Q_PROPERTY(QVector<int> val READ readValeur NOTIFY cptChanged);
+    Q_PROPERTY(QString scoree READ readScore NOTIFY cptChanged);
+    Q_PROPERTY(QString best READ readBestscore NOTIFY cptChanged);
 
     QString readPlateau();
     QVector<bool> readVisible();
     QVector<int> readAbs();
     QVector<int> readOrd();
-    QVector<QString> readColor();
-    QVector<QString> readChiffre();
+    QVector<int> readValeur();
     int findElement(vector<int> &liste,int element);
+    QString readScore();
+    QString readBestscore();
 
 signals:
     void cptChanged();
@@ -43,14 +46,14 @@ public slots:
 private:
     QVector<bool> visible;
     vector<int> position;
-    QVector<QString> couleurs;
-    QVector<QString> chiffres;
-    vector<string> listeCouleurs;
     int t[4][4];
     vector<int> disponible;
     QVector<int> x;
     QVector<int> y;
     int fPlateau;
+    QVector<int> valeur;
+    int score=0;
+    int bestscore=0;
 };
 
 #endif // PLATEAU_H
