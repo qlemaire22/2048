@@ -1,6 +1,5 @@
-﻿# Projet 2048
+# Projet 2048
 
-Théo PONTON 
-Quentin LEMAIRE
+Quentin LEMAIRE - Théo PONTON 
 
-a
+Implementation of the 2048 game in C++.
