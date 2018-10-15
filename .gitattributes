@@ -1,1 +1,3 @@
 *.qml linguist-vendored
+*.pro linguist-vendored
+*.qrc linguist-vendored
